@@ -15,6 +15,7 @@ def reply(user_id, msg):
     print(resp.content)
 
 
+@app.route('/', methods=['GET'])
 def handle_verification():
     return request.args['hub.challenge']
 
