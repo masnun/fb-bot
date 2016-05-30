@@ -27,6 +27,7 @@ You shall see the url for your local server. Something like: `https://6cecffb8.n
 * Create a Facebook App.
 * Add the `Messenger` Product.
 * Enable webhooks. Use the above URL as the callback webhook URL. 
+*  Edit `server.py` and update the `VERIFY_TOKEN` with the token you set.
 * Once the callback is verified, subscribe the app to one of your pages. 
 * Also generate a page access token for that page. 
 *  Edit `server.py` and update the `ACCESS_TOKEN` with the new token we got.
