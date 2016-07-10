@@ -11,7 +11,7 @@ def reply(user_id, msg):
         "recipient": {"id": user_id},
         "message": {"text": msg}
     }
-    resp = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=" + ACCESS_TOKEN, json=data)
+    resp = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=" + ACCESS_TOKEN, json=data, headers={"Content-Type":"application/json"})
     print(resp.content)
 
 
